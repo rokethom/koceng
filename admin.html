@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <!-- ... (bagian head lainnya tetap sama) ... -->
+    <title>Admin Panel Toko</title>
+</head>
+<body class="bg-slate-100">
+    <!-- ... (konten body tetap sama) ... -->
+
+    <!-- Panggil file konfigurasi DULU -->
+    <script src="config.js"></script>
+    
+    <!-- Baru panggil Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-firestore-compat.js"></script>
+
+    <script>
+        // Hapus objek firebaseConfig dari sini
+        // const firebaseConfig = { ... };
+
+        // Inisialisasi Firebase menggunakan variabel dari config.js
+        firebase.initializeApp(firebaseConfig);
+        const auth = firebase.auth();
+        const db = firebase.firestore();
+        
+        // ... (sisa kode JavaScript lainnya tetap sama) ...
+    </script>
+</body>
+</html>
