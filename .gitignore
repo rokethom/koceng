@@ -1,0 +1,5 @@
+# Abaikan file konfigurasi sensitif
+config.js
+
+# Abaikan file sistem operasi
+.DS_Store
